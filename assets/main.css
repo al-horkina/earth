@@ -26,16 +26,17 @@ body {
 
 @keyframes moon-way {
   50% {
-    transform: translateX(578px) rotate(-180deg);
+    transform: translateX(524px) rotate(-179deg);
     z-index: 1;
+  }
+  50.1% {
+    transform: translateX(512px) rotate(-180deg);
+    z-index: 10;
   }
   100% {
     transform: translateX(0px) rotate(-360deg);
     z-index: 10;
   }
-  /*  75% {
-      transform: translateX(-384px) rotate(-270deg) translateY(-50px);
-    }*/
 }
 
 /*# sourceMappingURL=main.css.map */
