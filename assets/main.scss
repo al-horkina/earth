@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cosmos {
+  min-height: 100vh;
+  background: url("img/cosmos.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.earth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+
+.moon {
+  position: absolute;
+  top: 200px;
+  left: 340px;
+  -webkit-animation: moon-way 5s linear infinite;
+
+}
+
+@keyframes moon-way {
+ 50% {
+    transform: translateX(578px) rotate(-180deg)  ;
+    z-index: 1;
+  }
+  100% {
+    transform: translateX(0px) rotate(-360deg);
+    z-index: 10;
+  }
+
+}
