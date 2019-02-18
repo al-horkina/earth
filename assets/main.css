@@ -9,28 +9,32 @@ body {
   background-size: cover;
 }
 
+.wrap {
+  margin: 0 auto;
+  width: 640px;
+}
+
 .earth {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   z-index: 5;
+  position: relative;
 }
 
 .moon {
   position: absolute;
   top: 200px;
-  left: 340px;
   -webkit-animation: moon-way 5s linear infinite;
 }
 
 @keyframes moon-way {
   50% {
-    transform: translateX(640px) rotate(-179deg);
+    transform: translateX(511px) rotate(-179deg);
     z-index: 1;
   }
   50.1% {
-    transform: translateX(639px) rotate(-180deg);
+    transform: translateX(512px) rotate(-180deg);
     z-index: 10;
   }
   100% {
